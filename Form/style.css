@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a11e7a,  #a11e7a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  /* Form container */
+  .form-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .form-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Header */
+  h1 {
+    font-size: 2.5em;
+    color: #a11e7a;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* Input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #f3a0c3;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  textarea:focus {
+    border-color: #ff5b77;
+    box-shadow: 0 0 8px rgba(255, 91, 119, 0.4);
+  }
+
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+
+  /* Button styles */
+  .submit-btn {
+    background-color: #a11e7a;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background-color: #f05a75;
+    transform: translateY(-3px);
+  }
+
+  .submit-btn:active {
+    transform: translateY(1px);
+  }
+
+  /* Label styles */
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 2px;
+    text-align: left; /* Align text to the right */
+    margin-left: 10px; /* Adjust this value to give some space to the right */
+}
+
+
+  /* Footer link */
+  .footer-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #ff5b77;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #ff3b5f;
+  }.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
